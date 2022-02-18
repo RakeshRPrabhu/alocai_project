@@ -5,8 +5,7 @@ Using Flask to build a Web Server with Swagger documentation.
 
 Integration with Flask-SQLAlchemy, Marshmallow and Pytest extensions.
 
-
-
+Added POSTMAN API Documentation in the file Alocai API Docs.postman_collection.json .
 
 
 ## Local Deployment Instructions
