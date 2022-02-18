@@ -1,0 +1,9 @@
+apispec==5.1.1
+apispec-webframeworks==0.5.2
+Flask==2.0.2
+flask-marshmallow==0.14.0
+Flask-SQLAlchemy==2.5.1
+marshmallow==3.14.1
+psycopg2-binary==2.9.3
+pytest==7.0.1
+pytest-cov==3.0.0

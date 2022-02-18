@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "78d80421-ac21-4de1-b589-e782f05a5651",
+		"name": "Alocai API Docs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check DB Connection - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/status",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check DB Connection - HEAD",
+			"request": {
+				"method": "HEAD",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/status",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Check DB Connection - HEAD",
+					"originalRequest": {
+						"method": "HEAD",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Feb 2022 16:14:25 GMT"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Create A Game - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"EA Cricket 2007\",\n    \"price\": 10.99,\n    \"space\": 5368709120\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/games",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create A Game - POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"EA Cricket 2007\",\n    \"price\": 10.99,\n    \"space\": 5368709120\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/games",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"games"
+							]
+						}
+					},
+					"status": "CREATED",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Feb 2022 15:02:15 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"EA Cricket 2001\",\n    \"price\": 1.99,\n    \"space\": 1610612736\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Best Value Games - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/v1/best_value_games?pen_drive_space=10737418240",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"best_value_games"
+					],
+					"query": [
+						{
+							"key": "pen_drive_space",
+							"value": "10737418240"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Best Value Games - POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/best_value_games?pen_drive_space=10737418240",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"best_value_games"
+							],
+							"query": [
+								{
+									"key": "pen_drive_space",
+									"value": "10737418240"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "302"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.3 Python/3.9.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 17 Feb 2022 15:02:17 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"games\": [\n        {\n            \"name\": \"EA Cricket 2007\",\n            \"price\": 10.99,\n            \"space\": 5368709120\n        },\n        {\n            \"name\": \"EA Cricket 2008\",\n            \"price\": 12.99,\n            \"space\": 4294967296\n        }\n    ],\n    \"remaining_space\": 1073741824,\n    \"total_space\": 9663676416,\n    \"total_value\": 23.98\n}"
+				}
+			]
+		}
+	]
+}
